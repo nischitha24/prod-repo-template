@@ -41,7 +41,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          run: node index.js
+      - name: run node app
+        run: node index.js
           
       - name: To print node and npm version
         run: |
