@@ -37,9 +37,15 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Setup Node 16.x
+      - name: Setup Node 16.x and run node application
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
           run: node index.js
+          
+      - name: To print node and npm version
+        run: |
+            node -v
+            npm -v
+          
       
