@@ -55,6 +55,6 @@ jobs:
         run: docker -v
         
       - name: to print version of docker compose
-        run: docker compose -v
+        run: docker compose -version
           
       
