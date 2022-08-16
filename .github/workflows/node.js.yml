@@ -47,5 +47,14 @@ jobs:
         run: |
             node -v
             npm -v
+            
+      - name: list all docker images
+        run: sudo docker images
+        
+      - name: to print version of docker 
+        run: docker -v
+        
+      - name: to print version of docker compose
+        run: docker compose -v
           
       
