@@ -80,5 +80,5 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: my-artifact
-          path: path/to/artifact/**
+          path: https://github.com/nischitha24/gitactions/suites/7848995300/artifacts/332377131
      
