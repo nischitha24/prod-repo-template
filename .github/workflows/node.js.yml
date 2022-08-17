@@ -56,5 +56,13 @@ jobs:
         
       - name: to print version of docker compose
         run: docker compose version
-          
-      
+        
+      - name: to upload an artifact
+        run: mkdir -p path/to/artifact
+
+      - run: echo hello > path/to/artifact/world.txt
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact/world.txt
