@@ -81,6 +81,8 @@ jobs:
           path: path/to/artifact/welcome.txt
           
       - name: to print the text file
-        run: |
+        with:
+          path: path/to/artifact
+          run: |
             more world.txt
             more welcome.txt
