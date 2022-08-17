@@ -76,8 +76,4 @@ jobs:
           name: my-artifact
           path: path/to/artifact/welcome.txt
           
-      - name: to print the text file
-        with:
-          path: path/to/artifact/world.txt
-          run: more world.txt 
-          
+     
