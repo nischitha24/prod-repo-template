@@ -76,15 +76,11 @@ jobs:
           name: my-artifact
           path: path/to/artifact/welcome.txt
           
-  release: 
-    
-    runs-on: ubuntu-latest
-    needs: build
-    steps: 
-    - name: Download artifact
-    - uses: actions/download-artifact@v3
-      with:
-        name: my-artifact
-    - name: test artifact download
-      run: ls -R
+      - name: Download artifact
+      - uses: actions/download-artifact@v3
+        with:
+          name: my-artifact
+          
+      - name: test artifact download
+        run: ls -R
      
