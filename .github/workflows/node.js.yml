@@ -20,6 +20,7 @@ on:
         description: "Branch name"
         required: true
       3name:
+        type: choice
         description: "Option to print a file"
         required: true
         options: 
