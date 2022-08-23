@@ -1,0 +1,5 @@
+name: trigger 
+on:
+  push:
+    tags:
+     -"*"
