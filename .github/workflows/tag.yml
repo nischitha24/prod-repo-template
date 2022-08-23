@@ -14,6 +14,12 @@ jobs:
       - name: to fetch tags
         run: git fetch --tags
         
+      - run: |
+            echo "${{ github.action }}"
+            echo "${{ github.event }}"
+            echo "${{ github.event_name }}"
+            echo "${{ github.ref }}"
+        
       
       
       
