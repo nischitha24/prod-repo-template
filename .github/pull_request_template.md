@@ -26,6 +26,16 @@ Release notes
   | Asset DB      |     Content Cell                     |
   | User  DB      |     Content Cell                     |
   
+  |  SQL Tables   |   SQL Columns |
+  | ------------- | ------------- |
+  | Content Cell  | Content Cell  |
+  | Content Cell  | Content Cell  |
+  
+  |   Mongo Collections  |    Mongo Keys  |
+  |   ------------------ | -------------- |
+  |     Content Cell     |  Content Cell  |
+  |     Content Cell     |  Content Cell  |
+  
   ## 1.4 Update the KONG admin service and ROUTE as below
   
   | KONG_SERVICE_HOST  | KONG_ROUTE   |
