@@ -6,8 +6,6 @@
 
 # Mobile Application Release (Version, Link, Release Type, Status)
 
-# Installation Prerequisites
-
 # Update the crontab with below entry
 
 # Invoice Template Changes (Template Name, Download template location)
