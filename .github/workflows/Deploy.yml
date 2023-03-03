@@ -1,0 +1,36 @@
+name: deploy_on_VM
+on:
+   workflow_dispatch:
+    inputs:
+      tag: 
+        description: "Tag, e.g.,SP.0.0.0"
+        required: true
+      OrgRepo:
+        description: "org/repo, e.g.,ncmsdev/ocpp-server"
+        required: true
+jobs:
+      
+   deploy:
+      
+      runs-on: ubuntu-latest
+    
+      steps:
+        
+        - name: 'Checkout Source-repo'
+          uses: actions/checkout@main
+          
+        - name: 'checkout release-repo'
+          uses: actions/checkout@main
+          with:
+            repository: ncmsdev/release
+            token: ${{ secrets.ORG_NPM_INSTALL }}
+            path: release
+          
+        - name: 'load creds'
+          run: |
+            echo '${{ secrets.PEM_KEY }}' > temp.pem
+            chmod 400 temp.pem
+                
+        - name: 'deploy service on VM'
+          run: |
+            bash release/makeCompose.sh ${{ secrets.ORG_NPM_INSTALL }} ${{ inputs.OrgRepo }} ${{ inputs.tag }} ${{ secrets.HOST }} ${{ secrets.AZ_SERVICE_PASSWORD }} ${{ secrets.AZ_TENANT }}
