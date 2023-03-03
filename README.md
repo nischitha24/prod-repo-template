@@ -1,5 +1,1 @@
-git_actions_pull_request_trials
-git_actions_pull_request_trials
-git_actions_pull_request_trials
-git_actions_pull_request_trials
-git_actions_pull_request_trials
+This repository can be used as a template to create any production related repositories for deployment purpose.
