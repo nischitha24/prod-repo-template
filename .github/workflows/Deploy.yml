@@ -8,6 +8,28 @@ on:
       OrgRepo:
         description: "org/repo, e.g.,ncmsdev/ocpp-server"
         required: true
+        options:
+        - ncmsdev/numo-language-translator
+        - ncmsdev/npm-qrcharge
+        - ncmsdev/numo-qr-charge-web-app
+        - ncmsdev/npm-role-manager
+        - ncmsdev/flutter-admin-layouts
+        - ncmsdev/numo-access
+        - ncmsdev/npm-tariff-management
+        - ncmsdev/npm-user-manager
+        - ncmsdev/numo-plus
+        - ncmsdev/ocpp-server
+        - ncmsdev/npm-report-manager
+        - ncmsdev/numo-log-export
+        - ncmsdev/npm-reservation
+        - ncmsdev/audit-logs
+        - ncmsdev/npm-notification-manager
+        - ncmsdev/ocpi-server
+        - ncmsdev/npm-invoice-maker
+        - ncmsdev/ncms-asset
+        - ncmsdev/ncms-user
+        - ncmsdev/npm-asset-manager
+        - ncmsdev/numo-hub-ui
 jobs:
       
    deploy:
